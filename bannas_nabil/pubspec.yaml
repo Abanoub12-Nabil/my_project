@@ -1,0 +1,52 @@
+name: Holy_Bible
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  lottie: ^3.1.2
+  flutter_svg: ^2.0.10+1
+  shared_preferences: ^2.0.0
+  font_awesome_flutter: ^10.1.0
+  flutter_localizations:
+    sdk: flutter
+  share_plus: ^10.0.0
+  provider: ^6.0.3
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+  flutter_tts: ^4.0.2
+  flutter_local_notifications: ^17.2.1+2
+  timezone: ^0.9.4
+  badges: ^3.1.2
+  rename: ^3.0.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/1.png" # تأكد من وضع مسار الصورة الصحيح للأيقونة
+  remove_alpha_ios: true  # إضافة هذا السطر لإزالة القناة الشفافة من أيقونات iOS
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/bible-svgrepo-com.svg
+    - assets/images/notebook-svgrepo-com.svg
+    - assets/images/back.jpg
+    - assets/images/question-mark-circle-svgrepo-com.svg
+    - assets/images/a-heartwarming-illustration-of-a-young-boy-of-12-o-WVM8a_bjRwCVaZqSvEFqUw-I4huwHSgTy2UqKxWpL2BAQ.jpeg
+    - assets/images/animations/Animation - 1724366999988.json
+    - assets/images/animations/Animation - 1724368816496.json
+    - assets/images/animations/Animation - 1724369323574 sad.json

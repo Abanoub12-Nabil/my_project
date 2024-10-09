@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "734608623636",
+    "project_id": "holy-bible-34dc5",
+    "storage_bucket": "holy-bible-34dc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734608623636:android:3fb500c191b32e066b3f01",
+        "android_client_info": {
+          "package_name": "com.bannas12.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdZtsc0xDKm0dcz_BuRy1gVouiifHvpkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734608623636:android:476c1ff81ebce4b76b3f01",
+        "android_client_info": {
+          "package_name": "com.example.Holy_Bible"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdZtsc0xDKm0dcz_BuRy1gVouiifHvpkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+dependencies {
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
+
+
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+}
+
+android {
+    namespace = "com.example.Holy_Bible"
+    compileSdk = 34  // تحديد القيمة الفعلية هنا
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"  // الصيغة الصحيحة
+    }
+
+    defaultConfig {
+        applicationId = "com.example.Holy_Bible"
+        minSdk = 21 // تحديد قيمة رقمية بدلاً من flutter.minSdkVersion
+        targetSdk = 34  // تحديد القيمة الفعلية هنا
+        versionCode = 1 // يمكنك تعيين القيم مباشرة أو استخدام flutter.versionCode إذا كان معرفًا بشكل صحيح
+        versionName = "1.0" // يمكنك تعيين القيم مباشرة أو استخدام flutter.versionName إذا كان معرفًا بشكل صحيح
+    }
+
+    buildTypes {
+        release {
+            // إعداد توقيع الإصدار هنا، إذا كان متاحًا
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

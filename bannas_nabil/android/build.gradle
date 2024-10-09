@@ -1,0 +1,19 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    // تحديد مسار البناء الفرعي
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    // ضمان التقييم يعتمد على ":app" لتفادي المشاكل
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
